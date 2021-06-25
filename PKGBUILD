@@ -3,8 +3,8 @@
 # Website: https://www.rebornos.org
 # Support: https://discord.gg/cU5s6MPpQH
 # Forum: https://rebornos.discourse.group/
-pkgname=reborn-kde-layan.git
-_pkgname=reborn-kde-layan
+pkgname=rebornos-kde-layan.git
+_pkgname=rebornos-kde-layan
 _destname1="/etc/skel/.config/"
 _destname2="/etc/skel/.local/share/"
 _destname3="/etc/xdg/"
@@ -16,10 +16,10 @@ url="https://github.com/cookiesource/reborn-kde-layan"
 license=('GPL2')
 makedepends=('git')
 depends=()
-conflicts=('reborn-kde-sweet')
+conflicts=('rebornos-kde-sweet')
 provides=("${pkgname}")
 options=(!strip !emptydirs)
-source=(${_pkgname}::"git+https://github.com/cookiesource/${_pkgname}.git")
+source=(${_pkgname}::"git+https://github.com/RebornOS-Developers/${_pkgname}.git")
 sha256sums=('SKIP')
 install='postinstall.install'
 package() {
